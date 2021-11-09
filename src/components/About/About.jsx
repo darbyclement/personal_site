@@ -8,7 +8,7 @@ import resume from '../../images/Clement_Darby_resume.pdf';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree} = about;
+  const { img, paragraphOne, paragraphThree } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -43,10 +43,15 @@ const About = () => {
                     'Hi! My name is Darby and I am a current 3rd year at UC Berkeley studying Electrical Engineering, Computer Science, and Math. '}
                 </p>
                 <p className="about-wrapper__info-text">
-                    In my free time, I love to teach! You can catch me volunteering as a senior mentor for <a href = 'https://csmentors.berkeley.edu/#/'>Computer Science Mentors</a> for a <a href = 'http://eecs70.org'>discrete math and probability course</a>. I am also on staff as a lab assistant for <a href = 'http://eecs16b.org'>intro electrical engineering course!</a>
+                  In my free time, I love to teach! You can catch me volunteering as a senior mentor
+                  for <a href="https://csmentors.berkeley.edu/#/">Computer Science Mentors</a> for a{' '}
+                  <a href="http://eecs70.org">discrete math and probability course</a>. I am also on
+                  staff as a undergraduate student instructor (uGSI or TA) for{' '}
+                  <a href="http://eecs16b.org">intro electrical engineering course!</a>
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphThree || 'I am currently looking for summer internships in software engineering for 2022.'}
+                  {paragraphThree ||
+                    'I am currently looking for interesting software engineering projects.'}
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">
